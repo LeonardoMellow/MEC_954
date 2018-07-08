@@ -40,7 +40,7 @@
 static decl s_bPlots = 1; 
 
   /* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
-   * s_bPlots == 1 :  Calcula e armazena em dados.txt o poder dos 3 testes do  *
+   * s_bPlots == 0 :  Calcula e armazena em dados.txt o poder dos 3 testes do  *
    *                  programa para diferentes valores de beta1 na em H0.      *
    * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
 
@@ -74,7 +74,6 @@ main()
 			dfalse = vfalse[1];    // valores de beta1, então gere só para 1 deles
 		else {                         // e faça a simulação de poder apenas alterando 
 			dfalse = vfalse[k];    // o tamanho amostral
-			B = 0;
 		}
 
 		montecarlo(25, R,B,SEED,1,0,file);
