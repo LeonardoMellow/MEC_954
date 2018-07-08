@@ -37,10 +37,10 @@
 #include "beta_fun.ox"		
 
 // Escolha de efetuar simulações adicionais para gerar dados do Poder dos Testes //
-static decl s_bPlots = 1; 
+static decl s_bPlots = 0; 
 
   /* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
-   * s_bPlots == 0 :  Calcula e armazena em dados.txt o poder dos 3 testes do  *
+   * s_bPlots == 1 :  Calcula e armazena em dados.txt o poder dos 3 testes do  *
    *                  programa para diferentes valores de beta1 na em H0.      *
    * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
 
